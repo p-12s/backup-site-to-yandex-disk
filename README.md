@@ -6,5 +6,5 @@ https://snipp.ru/php/disk-yandex#link-udalenie-fayla-ili-papki
 
 ### Work tasks
 - [x] Success work script
-- [] Refactor with classes (OOP) and put to composer package
-- [] Rewrite script on some other language
+- [ ] Refactor with classes (OOP) and put to composer package
+- [ ] Rewrite script on some other language
