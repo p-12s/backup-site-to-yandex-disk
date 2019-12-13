@@ -1,7 +1,7 @@
 # backup-site-to-yandex-disk
 
 ### Crontab job (run the backup scripts at 1:00am)
-0 1 * * * php /path_to_script/backup_script_name.php >> /path_to_log/work_backup.txt 2>&1
+0 1 * * * php /path_to_script/backup_site_to_yandex_disk.php >> /path_to_log/work_backup.txt 2>&1
 
 ### Looking resources
 https://yandex.ru/dev/disk/poligon/#!//v1/disk/resources/GetResource  
