@@ -4,11 +4,16 @@ archiveCreationTempFolder="/var/tmp/"
 archiveName="site.tar.gz"
 dbDumpPath="/var/www/your_site_database_dump_path.sql"
 
-# creating postgresql db dump to site folder
+### creating postgresql/mysql db dump to site folder
+
+# for postgresql:
 # chould be create file .pgpass in /root/.pgpass
 # with text: localhost:your_db_port:your_dbname:your_username:your_username_password
 create_db_dump () {
+	# postgresql
 	pg_dump --format=c --file=${dbDumpPath} --host=localhost --username=your_username --dbname=your_dbname --encoding=utf8
+	# mysql
+	mysqldump --databases your_dbname > your_dbname.sql
 	echo "DB dump created in ${dbDumpPath}" 
 }
 
